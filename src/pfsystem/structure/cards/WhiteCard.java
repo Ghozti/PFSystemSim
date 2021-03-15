@@ -1,4 +1,4 @@
 package pfsystem.structure.cards;
 
-public class WhiteCard {
+public class WhiteCard extends Card{
 }
