@@ -2,16 +2,14 @@ package pfsystem.structure.cards;
 
 abstract class Card {
 
-    String ID;
-    String exDate;
-    boolean activated;
-    boolean massagePrivelage;
+    public String ID;
+    public String exDate;
+    public boolean activated;
 
-    public Card(String ID ,String exDate, boolean privelage){
+    public Card(String ID ,String exDate){
         this.ID = ID;
         this.exDate = exDate;
         activated = false;
-        massagePrivelage = privelage;
     }
 
     public void setExpirationDate(String date) {
