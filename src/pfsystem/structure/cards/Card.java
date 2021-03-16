@@ -1,33 +1,31 @@
 package pfsystem.structure.cards;
 
-public class Card implements CardMethods{
+abstract class Card {
 
     String ID;
     String exDate;
     boolean activated;
+    boolean massagePrivelage;
 
-    public Card(String ID ,String exDate){
+    public Card(String ID ,String exDate, boolean privelage){
         this.ID = ID;
         this.exDate = exDate;
         activated = false;
+        massagePrivelage = privelage;
     }
 
-    @Override
     public void setExpirationDate(String date) {
         exDate = date;
     }
 
-    @Override
     public void setID(String ID) {
         this.ID = ID;
     }
 
-    @Override
     public String getID() {
         return ID;
     }
 
-    @Override
     public String getExpirationDate() {
         return exDate;
     }
