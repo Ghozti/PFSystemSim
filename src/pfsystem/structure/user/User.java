@@ -21,4 +21,13 @@ public class User {
         this.guest = guest;
         massagePrivelage = true;
     }
+
+    public String getCardID(){
+        if(wCard != null){
+            return wCard.getID();
+        }else if(bCard != null){
+            return bCard.getID();
+        }
+        return "ID COULD NOT BE RETURNED";
+    }
 }
