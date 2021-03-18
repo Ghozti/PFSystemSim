@@ -1,8 +1,13 @@
 package pfsystem.utils;
 
-import java.io.File;
+import java.io.*;
 
 public class DataBaseCreator {
+
+    public void createInitFiles(){
+        createMainDir();
+        createSubDir("User");
+    }
 
     public void createMainDir(){
         File directory = new File(System.getProperty("user.home") + "/PFSystem");
@@ -19,7 +24,14 @@ public class DataBaseCreator {
         return directory.getAbsolutePath();
     }
 
-    public void createFile(String path){
-
+    public void createFile(String path, String fileName, String content){
+        File file = new File(path + "/" + fileName);
+        if (!file.exists()) {
+            try (Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file), "utf-8"))) {
+                writer.write(content);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }
