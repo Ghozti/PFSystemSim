@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import pfsystem.utils.DataBaseCreator;
 
 import java.io.IOException;
 
@@ -12,6 +13,9 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
+        DataBaseCreator creator = new DataBaseCreator();
+        creator.createInitFiles();
+
         Parent root = FXMLLoader.load(getClass().getResource("fxml/main.fxml"));
         primaryStage.setTitle("Home Page");
         primaryStage.centerOnScreen();
