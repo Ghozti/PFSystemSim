@@ -1,14 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="pfsystem.fxmlcontrollers.AccountViewer"
-            prefHeight="400.0" prefWidth="600.0">
 
-</AnchorPane>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #8327B3;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="cardImg" fitHeight="150.0" fitWidth="200.0" layoutX="386.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+            <Text fill="#ffc500" layoutX="31.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Card: ">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fill="#ffc500" layoutX="28.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Name:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fill="#ffc500" layoutX="28.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Card ID:  ">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fill="#ffc500" layoutX="28.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Massage Available:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
