@@ -20,5 +20,6 @@ public class AccountViewer {
 
     @FXML
     public void checkOut(ActionEvent actionEvent) {
+
     }
 }
