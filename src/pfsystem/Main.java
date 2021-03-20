@@ -5,7 +5,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import pfsystem.utils.DataBaseCreator;
+import pfsystem.utils.database.DataBaseCreator;
+import pfsystem.utils.generators.CardIDgenerator;
 
 import java.io.IOException;
 
