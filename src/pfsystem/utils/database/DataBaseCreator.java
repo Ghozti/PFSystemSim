@@ -1,22 +1,25 @@
 package pfsystem.utils.database;
 
+import pfsystem.utils.constants.Constants;
+
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 
 public class DataBaseCreator {
 
-    public void createInitFiles(){
+    public static void createInitFiles(){
         createMainDir();
-        createSubDir("User");
+        createSubDir(Constants.p_mainPath,"User");
     }
 
-    public void createMainDir(){
-        File directory = new File(System.getProperty("user.home") + "/PFSystem");
+    public static void createMainDir(){
+        File directory = new File(Constants.p_mainPath);
         if (!directory.exists()) {
             directory.mkdir();
         }
     }
 
-    public String createSubDir(String path, String name){
+    public static String createSubDir(String path, String name){
         File directory = new File(path + "/" + name);
         if (!directory.exists()) {
             directory.mkdir();
@@ -24,10 +27,10 @@ public class DataBaseCreator {
         return directory.getAbsolutePath();
     }
 
-    public void createFile(String path, String fileName, String content){
+    public static void createFile(String path, String fileName, String content){
         File file = new File(path + "/" + fileName);
         if (!file.exists()) {
-            try (Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file), "utf-8"))) {
+            try (Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file), StandardCharsets.UTF_8))) {
                 writer.write(content);
             } catch (IOException e) {
                 e.printStackTrace();

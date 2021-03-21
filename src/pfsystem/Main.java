@@ -13,8 +13,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        DataBaseCreator creator = new DataBaseCreator();
-        creator.createInitFiles();
+        DataBaseCreator.createInitFiles();
 
         Parent root = FXMLLoader.load(getClass().getResource("fxml/main.fxml"));
         primaryStage.setTitle("Home Page");
