@@ -16,8 +16,8 @@ public class DataBaseCreator {
         }
     }
 
-    public String createSubDir(String name){
-        File directory = new File(System.getProperty("user.home") + "/PFSystem/" + name);
+    public String createSubDir(String path, String name){
+        File directory = new File(path + "/" + name);
         if (!directory.exists()) {
             directory.mkdir();
         }

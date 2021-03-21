@@ -14,7 +14,7 @@ public class CreateCard {
     TextField dateField;
 
     @FXML
-    Label label;
+      Label label;
 
     @FXML
     public void createCard(ActionEvent actionEvent) {
