@@ -18,5 +18,10 @@ public class CreateCard {
 
     @FXML
     public void createCard(ActionEvent actionEvent) {
+
+    }
+
+    public boolean blackCardSelected() {
+       return true;
     }
 }
