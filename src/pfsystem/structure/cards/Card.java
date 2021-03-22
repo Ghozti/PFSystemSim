@@ -1,19 +1,14 @@
 package pfsystem.structure.cards;
 
-abstract class Card {
+public class Card {
 
     public String ID;
-    public String exDate;
     public boolean activated;
 
-    public Card(String ID ,String exDate){
-        this.ID = ID;
-        this.exDate = exDate;
-        activated = false;
-    }
 
-    public void setExpirationDate(String date) {
-        exDate = date;
+    public Card(String ID){
+        this.ID = ID;
+        activated = false;
     }
 
     public void setID(String ID) {
@@ -22,10 +17,6 @@ abstract class Card {
 
     public String getID() {
         return ID;
-    }
-
-    public String getExpirationDate() {
-        return exDate;
     }
 
     public void deactivate(){

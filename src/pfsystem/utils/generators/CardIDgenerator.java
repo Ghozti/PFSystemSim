@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class CardIDgenerator {
 
-    public String cardIDGenerator(){
+    public static String cardIDGenerator(){
         Random rand = new Random();
         StringBuilder builder = new StringBuilder();
 
