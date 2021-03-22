@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
+
 public class CreateCard {
 
     @FXML
@@ -16,12 +17,14 @@ public class CreateCard {
     @FXML
       Label label;
 
+    boolean black = false;
+
     @FXML
     public void createCard(ActionEvent actionEvent) {
 
     }
 
-    public boolean blackCardSelected() {
-       return true;
+    public void blackCardSelected() {
+       black = true;
     }
 }

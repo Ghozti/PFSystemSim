@@ -4,6 +4,9 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import pfsystem.Main;
+
+import java.io.IOException;
 
 public class CheckInController {
 
@@ -15,5 +18,11 @@ public class CheckInController {
 
     @FXML
     public void checkIn(ActionEvent actionEvent) {
+    }
+
+    @FXML
+    public void changeScreenToCardCreator(ActionEvent actionEvent) throws IOException {
+        Main main = new Main();
+        main.changeScene("CreateCard", "Card Creator", false, 600,400);
     }
 }
