@@ -4,7 +4,7 @@ public class Card {
 
     public String ID;
     public boolean activated;
-
+    public boolean massagePrivilege;
 
     public Card(String ID){
         this.ID = ID;

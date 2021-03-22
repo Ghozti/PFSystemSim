@@ -4,6 +4,7 @@ public class BlackCard extends Card{
 
     public BlackCard(String ID) {
         super(ID);
+        massagePrivilege = true;
         activate();
     }
 }

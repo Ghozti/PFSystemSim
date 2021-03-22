@@ -1,33 +1,40 @@
 package pfsystem.structure.user;
 
-import pfsystem.structure.cards.BlackCard;
 import pfsystem.structure.cards.Card;
-import pfsystem.structure.cards.WhiteCard;
+
 
 public class User {
 
-    public static boolean canHaveGuest = false;
-    public static Card card;
-    public static Guest guest = null;
-    public static  boolean massagePrivelage = false;
+    private static boolean canHaveGuest = false;
+    private static Card card;
+    private static String cardID;
+    private static Guest guest;
+    private static boolean massagePrivilege;
 
-    public User(WhiteCard whiteCard, int age, String name){
-        card = whiteCard;
+    public static boolean canHaveGuest() {
+        return canHaveGuest;
     }
 
-    public User(BlackCard blackCard, int age, String name, Guest guest){
-        canHaveGuest = true;
-        card = blackCard;
-        this.guest = guest;
-        massagePrivelage = true;
+    public static void setCard(Card card){
+        User.card = card;
     }
 
-    public String getCardID(){
+    public static Card getCard(){
+        return card;
+    }
+
+    public static String getCardID(){
         if(card != null){
-            return card.getID();
-        }else if(card != null){
-            return card.getID();
+            return cardID;
         }
         return "ID COULD NOT BE RETURNED";
+    }
+
+    public static Guest getGuest(){
+        return guest;
+    }
+
+    public static boolean getMassagePrivilege(){
+        return massagePrivilege;
     }
 }
