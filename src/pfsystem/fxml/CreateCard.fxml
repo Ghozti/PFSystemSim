@@ -47,7 +47,7 @@
                   <Font size="24.0" />
                </font>
             </Label>
-            <RadioButton layoutX="97.0" layoutY="305.0" mnemonicParsing="false" onAction="#blackCardSelected" text="Black Card" textFill="#ffc500">
+            <RadioButton fx:id="optionRadio" layoutX="97.0" layoutY="305.0" mnemonicParsing="false" text="Black Card" textFill="#ffc500">
                <font>
                   <Font size="14.0" />
                </font>
