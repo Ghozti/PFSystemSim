@@ -10,9 +10,10 @@ public class DataBaseCreator {
     public static void createInitFiles(){
         createMainDir();
         createSubDir(Constants.p_mainPath,"User");
+        createSubDir(Constants.p_mainPath + "/User", "Card");
     }
 
-    public static void createMainDir(){
+    private static void createMainDir(){
         File directory = new File(Constants.p_mainPath);
         if (!directory.exists()) {
             directory.mkdir();

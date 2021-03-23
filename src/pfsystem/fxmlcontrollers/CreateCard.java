@@ -9,10 +9,8 @@ import pfsystem.structure.cards.BlackCard;
 import pfsystem.structure.cards.WhiteCard;
 import pfsystem.structure.user.User;
 import pfsystem.utils.constants.Constants;
+import pfsystem.utils.database.DataBaseCreator;
 import pfsystem.utils.generators.CardIDgenerator;
-
-import java.lang.constant.Constable;
-
 
 public class CreateCard {
 
