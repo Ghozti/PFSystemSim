@@ -19,10 +19,7 @@ public class User {
 
     /**gets the cardID object**/
     public static String getCardID(){
-        if(card != null){
-            return card.getID();
-        }
-        return "ID COULD NOT BE RETURNED";
+        return card.getID();
     }
 
     /**gets the guest object**/

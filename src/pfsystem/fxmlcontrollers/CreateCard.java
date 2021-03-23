@@ -8,7 +8,10 @@ import javafx.scene.control.TextField;
 import pfsystem.structure.cards.BlackCard;
 import pfsystem.structure.cards.WhiteCard;
 import pfsystem.structure.user.User;
+import pfsystem.utils.constants.Constants;
 import pfsystem.utils.generators.CardIDgenerator;
+
+import java.lang.constant.Constable;
 
 
 public class CreateCard {
@@ -32,5 +35,7 @@ public class CreateCard {
         }else {
             User.setCard(new WhiteCard(CardIDgenerator.cardIDGenerator()));
         }
+
+        label.setText(Constants.m_createCardLabel + "" + User.getCardID());
     }
 }
