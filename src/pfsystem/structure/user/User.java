@@ -4,16 +4,10 @@ import pfsystem.structure.cards.Card;
 
 
 public class User {
-
-    private static boolean canHaveGuest = false;
-    private static Card card;
-    private static String cardID;
-    private static Guest guest;
-    private static boolean massagePrivilege;
-
-    public static boolean canHaveGuest() {
-        return canHaveGuest;
-    }
+    public static Card card;
+    public static boolean canHaveGuest;
+    public static Guest guest;
+    public static boolean massagePrivilege;
 
     public static void setCard(Card card){
         User.card = card;
@@ -23,9 +17,13 @@ public class User {
         return card;
     }
 
+    public static boolean canHaveGuest() {
+        return canHaveGuest;
+    }
+
     public static String getCardID(){
         if(card != null){
-            return cardID;
+            return card.getID();
         }
         return "ID COULD NOT BE RETURNED";
     }

@@ -35,7 +35,5 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         launch(args);
-        System.out.println(User.getCardID());
-        System.out.println(User.getMassagePrivilege());
     }
 }
