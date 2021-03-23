@@ -32,8 +32,5 @@ public class CreateCard {
         }else {
             User.setCard(new WhiteCard(CardIDgenerator.cardIDGenerator()));
         }
-
-        System.out.println(User.getCardID());
-        System.out.println(User.getMassagePrivilege());
     }
 }
