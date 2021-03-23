@@ -34,7 +34,6 @@ public class CreateCard {
         }
 
         System.out.println(User.getCardID());
-        System.out.println(User.getCardID());
-        //System.out.println(User.getMassagePrivilege());
+        System.out.println(User.getMassagePrivilege());
     }
 }
