@@ -12,6 +12,9 @@ import pfsystem.utils.constants.Constants;
 import pfsystem.utils.database.DataBaseCreator;
 import pfsystem.utils.generators.CardIDgenerator;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+
 public class CreateCard {
 
     @FXML
@@ -27,13 +30,14 @@ public class CreateCard {
     RadioButton optionRadio;
 
     @FXML
-    public void createCard(ActionEvent actionEvent) {
+    public void createCard(ActionEvent actionEvent) throws FileNotFoundException {
         if (optionRadio.isSelected()){
             User.setCard(new BlackCard(CardIDgenerator.cardIDGenerator()));
         }else {
             User.setCard(new WhiteCard(CardIDgenerator.cardIDGenerator()));
         }
 
+        DataBaseCreator.writeFile(new File(Constants.p_cardIDPath),User.getCardID());
         label.setText(Constants.m_createCardLabel + "" + User.getCardID());
     }
 }

@@ -1,7 +1,6 @@
 package pfsystem.utils.database;
 
 import pfsystem.utils.constants.Constants;
-
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 
@@ -33,6 +32,16 @@ public class DataBaseCreator {
         if (!file.exists()) {
             try (Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file), StandardCharsets.UTF_8))) {
                 writer.write(content);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public static void writeFile(File directory, String text) throws FileNotFoundException {
+        if (!directory.exists()) {
+            try (Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(directory), "utf-8"))) {
+                writer.write(text);
             } catch (IOException e) {
                 e.printStackTrace();
             }
