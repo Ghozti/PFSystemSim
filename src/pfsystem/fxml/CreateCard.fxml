@@ -52,6 +52,7 @@
                   <Font size="14.0" />
                </font>
             </RadioButton>
+            <Label fx:id="fieldLabels" layoutX="390.0" layoutY="254.0" prefHeight="17.0" prefWidth="161.0" textFill="#ffc500" />
          </children>
       </AnchorPane>
    </center>

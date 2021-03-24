@@ -11,7 +11,6 @@ import pfsystem.structure.user.User;
 import pfsystem.utils.constants.Constants;
 import pfsystem.utils.database.DataBaseCreator;
 import pfsystem.utils.generators.CardIDgenerator;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 
@@ -24,10 +23,13 @@ public class CreateCard {
     TextField dateField;
 
     @FXML
-      Label label;
+    Label label;
 
     @FXML
     RadioButton optionRadio;
+
+    @FXML
+    Label fieldLabels;
 
     @FXML
     public void createCard(ActionEvent actionEvent) throws FileNotFoundException {
@@ -37,7 +39,19 @@ public class CreateCard {
             User.setCard(new WhiteCard(CardIDgenerator.cardIDGenerator()));
         }
 
+        if (textEmpty(nameField.getText()) || textEmpty(dateField.getText())) {
+            fieldLabels.setText(Constants.e_EmptyFields);
+            return;
+        }
+
         DataBaseCreator.writeFile(new File(Constants.p_cardIDPath),User.getCardID());
         label.setText(Constants.m_createCardLabel + "" + User.getCardID());
+    }
+
+    public boolean textEmpty(String str){
+        if (str.isEmpty() || str.isBlank() || str == null){
+            return true;
+        }
+        return false;
     }
 }
