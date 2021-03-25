@@ -46,6 +46,8 @@
                   <Font size="18.0" />
                </font>
             </Button>
+            <Button fx:id="importBtn" layoutX="267.0" layoutY="253.0" mnemonicParsing="false" style="-fx-background-color: #8327B3;" text="Import Data" textFill="#ffc500" underline="true" />
+            <Label fx:id="noDataLabel" layoutX="269.0" layoutY="285.0" prefHeight="17.0" prefWidth="86.0" textFill="#ffc500" />
          </children>
       </AnchorPane>
    </center>
