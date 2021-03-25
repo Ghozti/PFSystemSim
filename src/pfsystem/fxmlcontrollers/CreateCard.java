@@ -31,18 +31,20 @@ public class CreateCard {
     @FXML
     Label fieldLabels;
 
-    //TODO optimize code
+    //TODO optimize code, COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT EVERYWHERE thank you :)
 
     @FXML
     public void createCard(ActionEvent actionEvent) throws FileNotFoundException {
+
+        //sets the user's field values
+        User.setName(nameField.getText());
+        User.setBday(dateField.getText());
+
+        //will check if the radio button is selected if so then it will create a black card object
         if (optionRadio.isSelected()){
             User.setCard(new BlackCard(CardIDgenerator.cardIDGenerator()));
-            User.setName(nameField.getText());
-            User.setBday(dateField.getText());
         }else {
             User.setCard(new WhiteCard(CardIDgenerator.cardIDGenerator()));
-            User.setName(nameField.getText());
-            User.setBday(dateField.getText());
         }
 
         if (textEmpty(nameField.getText()) || textEmpty(dateField.getText())) {
@@ -50,13 +52,17 @@ public class CreateCard {
             return;
         }
 
+        /**writes into the text files**/
         DataBaseCreator.writeFile(new File(Constants.p_cardIDPath),User.getCardID());
         DataBaseCreator.writeFile(new File(Constants.p_cardNamePath),User.getName());
         DataBaseCreator.writeFile(new File(Constants.p_cardDatePath),User.getDate());
+
+        //once the car is created the label will display the card's ID
         label.setText(Constants.m_createCardLabel + "" + User.getCardID());
     }
 
-    public boolean textEmpty(String str){
+    //will check to see if the given text is empty
+    private boolean textEmpty(String str){
         if (str.isEmpty() || str.isBlank() || str == null){
             return true;
         }
