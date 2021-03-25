@@ -24,6 +24,8 @@ public class Constants {
 
     public static final String e_EmptyFields = "These fields cannot be empty!";
 
+    public static final String e_NoDataFound = "No Data Found";
+
     /**MESSAGES**/
     public static final String m_createCardLabel = "Great! your card ID is :";
 }
