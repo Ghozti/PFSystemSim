@@ -31,12 +31,18 @@ public class CreateCard {
     @FXML
     Label fieldLabels;
 
+    //TODO optimize code
+
     @FXML
     public void createCard(ActionEvent actionEvent) throws FileNotFoundException {
         if (optionRadio.isSelected()){
             User.setCard(new BlackCard(CardIDgenerator.cardIDGenerator()));
+            User.setName(nameField.getText());
+            User.setBday(dateField.getText());
         }else {
             User.setCard(new WhiteCard(CardIDgenerator.cardIDGenerator()));
+            User.setName(nameField.getText());
+            User.setBday(dateField.getText());
         }
 
         if (textEmpty(nameField.getText()) || textEmpty(dateField.getText())) {
@@ -45,6 +51,8 @@ public class CreateCard {
         }
 
         DataBaseCreator.writeFile(new File(Constants.p_cardIDPath),User.getCardID());
+        DataBaseCreator.writeFile(new File(Constants.p_cardNamePath),User.getName());
+        DataBaseCreator.writeFile(new File(Constants.p_cardDatePath),User.getDate());
         label.setText(Constants.m_createCardLabel + "" + User.getCardID());
     }
 
