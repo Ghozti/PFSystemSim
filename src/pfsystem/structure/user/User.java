@@ -4,8 +4,31 @@ import pfsystem.structure.cards.Card;
 
 
 public class User {
+
+    private static String name;
+    private static String bday;
     private static Card card;
     private static Guest guest;
+
+    /**sets the user's name**/
+    public static void setName(String name){
+        User.name = name;
+    }
+
+    /**gets the user's name**/
+    public static String getName(){
+        return name;
+    }
+
+    /**sets the user's bday**/
+    public static void setBday(String date){
+        bday = date;
+    }
+
+    /**gets the user's name**/
+    public static String getDate(){
+        return bday;
+    }
 
     /**sets the card object**/
     public static void setCard(Card card){
