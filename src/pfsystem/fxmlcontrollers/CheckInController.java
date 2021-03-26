@@ -5,6 +5,9 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import pfsystem.Main;
+import pfsystem.utils.constants.Constants;
+import pfsystem.utils.database.DataBaseCreator;
+
 import java.io.IOException;
 
 
@@ -28,10 +31,6 @@ public class CheckInController {
 
     @FXML
     public void importData(ActionEvent event) {
-        try {
-
-        }catch (Exception e){
-
-        }
+        cardIDgetter.setText(DataBaseCreator.getFileText(Constants.p_cardIDPath));
     }
 }
