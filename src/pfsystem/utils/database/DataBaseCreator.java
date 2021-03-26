@@ -9,13 +9,13 @@ public class DataBaseCreator {
     //this method will create the initial files (this method is called in Main)
     public static void createInitFiles(){
         createMainDir();
-        createSubDir(Constants.p_mainPath,"User");
-        createSubDir(Constants.p_mainPath + "/User", "Card");
+        createSubDir(Constants.Paths.p_mainPath,"User");
+        createSubDir(Constants.Paths.p_mainPath + "/User", "Card");
     }
 
     //will create the main directory (PFsystem) in the user's home directory.
     private static void createMainDir(){
-        File directory = new File(Constants.p_mainPath);
+        File directory = new File(Constants.Paths.p_mainPath);
         if (!directory.exists()) {
             directory.mkdir();
         }

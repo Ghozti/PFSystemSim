@@ -35,7 +35,7 @@
                   <Font size="24.0" />
                </font>
             </Text>
-            <Label fx:id="errLabel" layoutX="180.0" layoutY="293.0" prefHeight="17.0" prefWidth="259.0" textFill="#ffc500" />
+            <Label fx:id="errLabel" layoutX="179.0" layoutY="302.0" prefHeight="17.0" prefWidth="259.0" textFill="#ffc500" />
             <Text fill="#ffc500" layoutX="160.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have a card yet? click ">
                <font>
                   <Font size="18.0" />
@@ -46,8 +46,9 @@
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button fx:id="importBtn" layoutX="267.0" layoutY="253.0" mnemonicParsing="false" onAction="#importData" style="-fx-background-color: #8327B3;" text="Import Data" textFill="#ffc500" underline="true" />
+            <Button fx:id="importBtn" layoutX="267.0" layoutY="273.0" mnemonicParsing="false" onAction="#importData" style="-fx-background-color: #8327B3;" text="Import Data" textFill="#ffc500" underline="true" />
             <Label fx:id="noDataLabel" layoutX="269.0" layoutY="285.0" prefHeight="17.0" prefWidth="86.0" textFill="#ffc500" />
+            <Label fx:id="inputErrLabel" layoutX="179.0" layoutY="249.0" prefHeight="17.0" prefWidth="264.0" textFill="#ffc500" />
          </children>
       </AnchorPane>
    </center>

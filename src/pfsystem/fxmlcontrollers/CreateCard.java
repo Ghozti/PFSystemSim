@@ -48,17 +48,17 @@ public class CreateCard {
         }
 
         if (textEmpty(nameField.getText()) || textEmpty(dateField.getText())) {
-            fieldLabels.setText(Constants.e_EmptyFields);
+            fieldLabels.setText(Constants.Errors.e_EmptyFields);
             return;
         }
 
         /**writes into the text files**/
-        DataBaseCreator.writeFile(new File(Constants.p_cardIDPath),User.getCardID());
-        DataBaseCreator.writeFile(new File(Constants.p_cardNamePath),User.getName());
-        DataBaseCreator.writeFile(new File(Constants.p_cardDatePath),User.getDate());
+        DataBaseCreator.writeFile(new File(Constants.Paths.p_cardIDPath),User.getCardID());
+        DataBaseCreator.writeFile(new File(Constants.Paths.p_cardNamePath),User.getName());
+        DataBaseCreator.writeFile(new File(Constants.Paths.p_cardDatePath),User.getDate());
 
         //once the car is created the label will display the card's ID
-        label.setText(Constants.m_createCardLabel + "" + User.getCardID());
+        label.setText(Constants.Messages.m_createCardLabel + "" + User.getCardID());
     }
 
     //will check to see if the given text is empty

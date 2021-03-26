@@ -7,7 +7,6 @@ import javafx.scene.control.TextField;
 import pfsystem.Main;
 import pfsystem.utils.constants.Constants;
 import pfsystem.utils.database.DataBaseCreator;
-
 import java.io.IOException;
 
 
@@ -20,7 +19,15 @@ public class CheckInController {
     Label errLabel;
 
     @FXML
+    Label inputErrLabel;
+
+    @FXML
     public void checkIn(ActionEvent actionEvent) {
+        if (DataBaseCreator.getFileText(Constants.Paths.p_cardIDPath).equals(cardIDgetter.getText())){
+            //TODO switch screen to card viewer
+        }else {
+            inputErrLabel.setText(Constants.Errors.e_WrongData);
+        }
     }
 
     @FXML
@@ -31,6 +38,6 @@ public class CheckInController {
 
     @FXML
     public void importData(ActionEvent event) {
-        cardIDgetter.setText(DataBaseCreator.getFileText(Constants.p_cardIDPath));
+        cardIDgetter.setText(DataBaseCreator.getFileText(Constants.Paths.p_cardIDPath));
     }
 }
