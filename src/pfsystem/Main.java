@@ -5,7 +5,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import pfsystem.structure.user.User;
 import pfsystem.utils.database.DataBaseCreator;
 
 import java.io.IOException;

@@ -22,10 +22,13 @@ public class CheckInController {
     Label inputErrLabel;
 
     @FXML
-    public void checkIn(ActionEvent actionEvent) {
-        if (DataBaseCreator.getFileText(Constants.Paths.p_cardIDPath).equals(cardIDgetter.getText())){
-            //TODO switch screen to card viewer
+    public void checkIn(ActionEvent actionEvent) throws IOException {
+        Main main = new Main();
+        if (DataBaseCreator.getFileText(Constants.Paths.p_cardIDPath).trim().equals(cardIDgetter.getText())){
+            main.changeScene("AccountViewer","account viewer",false,600,400);
         }else {
+            System.out.println(DataBaseCreator.getFileText(Constants.Paths.p_cardIDPath));
+            System.out.println(cardIDgetter.getText());
             inputErrLabel.setText(Constants.Errors.e_WrongData);
         }
     }
