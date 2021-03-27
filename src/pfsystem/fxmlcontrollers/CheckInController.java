@@ -27,8 +27,6 @@ public class CheckInController {
         if (DataBaseCreator.getFileText(Constants.Paths.p_cardIDPath).trim().equals(cardIDgetter.getText())){
             main.changeScene("AccountViewer","account viewer",false,600,400);
         }else {
-            System.out.println(DataBaseCreator.getFileText(Constants.Paths.p_cardIDPath));
-            System.out.println(cardIDgetter.getText());
             inputErrLabel.setText(Constants.Errors.e_WrongData);
         }
     }
