@@ -4,7 +4,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
-import pfsystem.structure.user.User;
 import pfsystem.utils.constants.Constants;
 import pfsystem.utils.database.DataBaseCreator;
 
@@ -32,8 +31,9 @@ public class AccountViewer implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        myCard.setText(User.getCard().canHaveGuest ? "Black Card" : "White Card");
+        myCard.setText(DataBaseCreator.getFileText(Constants.Paths.p_typePath));
         myName.setText(DataBaseCreator.getFileText(Constants.Paths.p_cardNamePath));
         cardID.setText(DataBaseCreator.getFileText(Constants.Paths.p_cardIDPath));
+        massageAvailable.setText("IIII");
     }
 }

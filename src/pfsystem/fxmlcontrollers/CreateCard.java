@@ -56,6 +56,7 @@ public class CreateCard {
         DataBaseCreator.writeFile(new File(Constants.Paths.p_cardIDPath),User.getCardID());
         DataBaseCreator.writeFile(new File(Constants.Paths.p_cardNamePath),User.getName());
         DataBaseCreator.writeFile(new File(Constants.Paths.p_cardDatePath),User.getDate());
+        DataBaseCreator.writeFile(new File(Constants.Paths.p_typePath),optionRadio.isSelected() ? "Black Card" : "White card");
 
         //once the car is created the label will display the card's ID
         label.setText(Constants.Messages.m_createCardLabel + "" + User.getCardID());
