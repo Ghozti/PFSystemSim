@@ -69,4 +69,8 @@ public class DataBaseCreator {
         }
         return "";
     }
+
+    public static void deleteFile(String path){
+        //TODO do stuff to delete a file
+    }
 }
