@@ -35,5 +35,7 @@ public class Constants {
     public static class Messages extends Constants {
         /**MESSAGES**/
         public static final String m_createCardLabel = "Great! your card ID is :";
+
+        public static final String m_confirmDeactivate = "Card deactivated successfully";
     }
 }

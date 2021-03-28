@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
@@ -16,7 +17,8 @@
                </font>
             </Text>
             <Text fill="#ffc500" layoutX="17.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="We are sorry to hear you wish to deactivate your card, please press confirm in order to complete the action" />
-            <Button layoutX="271.0" layoutY="187.0" mnemonicParsing="false" onAction="#deactivate" style="-fx-background-color: #8327B3;" text="confirm" textFill="#ffc500" underline="true" />
+            <Button layoutX="272.0" layoutY="191.0" mnemonicParsing="false" onAction="#deactivate" style="-fx-background-color: #8327B3;" text="confirm" textFill="#ffc500" underline="true" />
+            <Label fx:id="confirmLabel" layoutX="221.0" layoutY="220.0" prefHeight="17.0" prefWidth="159.0" textFill="#ffc500" />
          </children>
       </AnchorPane>
    </top>

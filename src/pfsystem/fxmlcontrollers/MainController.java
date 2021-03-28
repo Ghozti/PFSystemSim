@@ -20,6 +20,7 @@ public class MainController {
     }
 
     @FXML
-    public void deactivateView(ActionEvent actionEvent) {
+    public void deactivateView(ActionEvent actionEvent) throws IOException {
+        main.changeScene("DeactivateScreen","deativate",false,600,263);
     }
 }
