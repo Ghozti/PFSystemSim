@@ -9,7 +9,7 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="263.0" prefWidth="600.0" style="-fx-background-color: #8327B3;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pfsystem.fxmlcontrollers.DeactivateController">
    <top>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="266.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
             <Text fill="#ffc500" layoutX="212.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Card Deactivator">
                <font>
@@ -18,7 +18,7 @@
             </Text>
             <Text fill="#ffc500" layoutX="17.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="We are sorry to hear you wish to deactivate your card, please press confirm in order to complete the action" />
             <Button layoutX="272.0" layoutY="191.0" mnemonicParsing="false" onAction="#deactivate" style="-fx-background-color: #8327B3;" text="confirm" textFill="#ffc500" underline="true" />
-            <Label fx:id="confirmLabel" layoutX="221.0" layoutY="220.0" prefHeight="17.0" prefWidth="159.0" textFill="#ffc500" />
+            <Label fx:id="mLabel" layoutX="222.0" layoutY="232.0" prefHeight="17.0" prefWidth="159.0" textFill="#ffc500" />
          </children>
       </AnchorPane>
    </top>
