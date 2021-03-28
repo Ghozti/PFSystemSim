@@ -4,10 +4,8 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
-import pfsystem.structure.user.User;
 import pfsystem.utils.constants.Constants;
 import pfsystem.utils.database.DataBaseCreator;
-
 import java.net.URL;
 import java.util.ResourceBundle;
 
