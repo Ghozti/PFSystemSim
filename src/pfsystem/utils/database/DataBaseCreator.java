@@ -70,7 +70,7 @@ public class DataBaseCreator {
         return "";
     }
 
-    public static void deleteFile(String path){
-        //TODO do stuff to delete a file
+    public static void deleteFile(File file){
+        file.delete();
     }
 }
