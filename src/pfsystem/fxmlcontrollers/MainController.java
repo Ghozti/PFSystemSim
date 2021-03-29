@@ -16,7 +16,8 @@ public class MainController {
     }
 
     @FXML
-    public void moreView(ActionEvent actionEvent) {
+    public void moreView(ActionEvent actionEvent) throws Exception {
+        main.changeScene("more","more",false,600,400);
     }
 
     @FXML
