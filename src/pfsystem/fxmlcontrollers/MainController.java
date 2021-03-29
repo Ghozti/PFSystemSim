@@ -4,9 +4,19 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import pfsystem.Main;
 
+import javax.swing.text.html.ImageView;
 import java.io.IOException;
 
 public class MainController {
+
+    @FXML
+    ImageView view1;
+
+    @FXML
+    ImageView view2;
+
+    @FXML
+    ImageView view3;
 
     private Main main = new Main();
 

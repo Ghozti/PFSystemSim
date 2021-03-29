@@ -9,7 +9,10 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #8327B3;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pfsystem.fxmlcontrollers.MainController">
    <center>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="view2" fitHeight="150.0" fitWidth="200.0" layoutX="600.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
+         </children></AnchorPane>
    </center>
    <top>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
@@ -34,10 +37,14 @@
                   <Image url="@../../Assets/EYzF90I1FEiOYCHMS2Rlhbyc9cvoB19G4xSLL2z8.png" />
                </image>
             </ImageView>
+            <ImageView fx:id="view1" fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true" />
          </children></AnchorPane>
    </top>
    <left>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="view3" fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true" />
+         </children></AnchorPane>
    </left>
    <right>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
