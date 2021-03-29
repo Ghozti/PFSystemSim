@@ -35,6 +35,5 @@ public class Main extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-
-    //TODO work on "more" and "deactivate"
+    //TODO work on "more"
 }
