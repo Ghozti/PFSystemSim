@@ -2,12 +2,14 @@ package pfsystem.fxmlcontrollers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import pfsystem.Main;
-
 import javax.swing.text.html.ImageView;
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-public class MainController {
+public class MainController implements Initializable {
 
     @FXML
     ImageView view1;
@@ -33,5 +35,10 @@ public class MainController {
     @FXML
     public void deactivateView(ActionEvent actionEvent) throws IOException {
         main.changeScene("DeactivateScreen","deativate",false,600,263);
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+
     }
 }

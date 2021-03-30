@@ -6,7 +6,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import pfsystem.utils.database.DataBaseCreator;
-
 import java.io.IOException;
 
 public class Main extends Application {
@@ -35,5 +34,5 @@ public class Main extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-    //TODO work on "more"
+    //TODO work on "more" add images and text to mainUI
 }
