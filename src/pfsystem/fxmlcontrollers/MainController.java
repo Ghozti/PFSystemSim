@@ -34,11 +34,11 @@ public class MainController implements Initializable {
 
     @FXML
     public void deactivateView(ActionEvent actionEvent) throws IOException {
-        main.changeScene("DeactivateScreen","deativate",false,600,263);
+        main.changeScene("DeactivateScreen","deactivate",false,600,263);
     }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
+        //TODO add text here
     }
 }
