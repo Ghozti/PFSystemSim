@@ -58,11 +58,6 @@
                   <Font size="24.0" />
                </font>
             </Label>
-            <Button layoutX="251.0" layoutY="347.0" mnemonicParsing="false" onAction="#checkOut" style="-fx-background-color: #8327B3;" text="Checkout" textFill="#ffc500" underline="true">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
          </children>
       </AnchorPane>
    </center>

@@ -1,6 +1,5 @@
 package pfsystem.fxmlcontrollers;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
@@ -22,11 +21,6 @@ public class AccountViewer implements Initializable {
 
     @FXML
     Label massageAvailable;
-
-    @FXML
-    public void checkOut(ActionEvent actionEvent) {
-
-    }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
