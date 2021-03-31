@@ -4,21 +4,11 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import pfsystem.Main;
-import javax.swing.text.html.ImageView;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class MainController implements Initializable {
-
-    @FXML
-    ImageView view1;
-
-    @FXML
-    ImageView view2;
-
-    @FXML
-    ImageView view3;
 
     private Main main = new Main();
 

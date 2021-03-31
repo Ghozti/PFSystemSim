@@ -12,11 +12,31 @@
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fx:id="view2" fitHeight="252.0" fitWidth="395.0" layoutX="848.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="img2" fitHeight="252.0" fitWidth="395.0" layoutX="848.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Assets/thumbnail_1200x800-1-1024x683.jpg" />
                </image></ImageView>
             <AnchorPane layoutX="1090.0" layoutY="-44.0" prefHeight="200.0" prefWidth="200.0" />
+            <Label layoutX="219.0" layoutY="39.0" text="STAY ACTIVE &amp; HEALTHY" textFill="#ffc500">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="78.0" text="At Planet Fitness, we know that staying active is more important than ever! " textFill="#ffc500">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="120.0" text="Get motivated and get movin' in and outside of our clubs today!" textFill="#ffc500">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="99.0" prefHeight="21.0" prefWidth="754.0" text="Check out our Fit Facts to learn how PF is here to help keep your physical and mental wellness in tip-top shape.  " textFill="#ffc500">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
          </children></AnchorPane>
    </center>
    <top>
@@ -42,22 +62,51 @@
                   <Image url="@../../Assets/EYzF90I1FEiOYCHMS2Rlhbyc9cvoB19G4xSLL2z8.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="view1" fitHeight="219.0" fitWidth="385.0" layoutX="14.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="img1" fitHeight="219.0" fitWidth="385.0" layoutX="14.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Assets/workout-gear-1024x576.jpg" />
                </image>
             </ImageView>
-            <Label layoutX="433.0" layoutY="100.0" text="Label" textFill="#ffc500" />
+            <Label layoutX="546.0" layoutY="100.0" text="YOUR FITNESS IS ESSENTIAL™" textFill="#ffc500">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="414.0" layoutY="150.0" prefHeight="21.0" prefWidth="612.0" text="At Planet Fitness, we believe your fitness is essential™. Making your overall physical wellness" textFill="#ffc500">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="414.0" layoutY="175.0" text="and increase your overall positive energy levels, and you’ll feel healthy and strong for the holidays and new year!" textFill="#ffc500">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
    </top>
    <bottom>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fx:id="view3" fitHeight="216.0" fitWidth="556.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="img3" fitHeight="216.0" fitWidth="556.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Assets/TB12-101-workouts_hero.jpg" />
                </image></ImageView>
+            <Label layoutX="670.0" layoutY="14.0" text="ALL. THE. PERKS." textFill="#ffc500">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="408.0" layoutY="49.0" text="With the PF Black Card® membership, you can use any of our 2000+ locations and bring a guest for free!" textFill="#ffc500">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="408.0" layoutY="70.0" text="And relax in the exclusive Black Card Spa!  Check out everything the PF Black Card® has to offer." textFill="#ffc500">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
          </children></AnchorPane>
    </bottom>
 </BorderPane>
